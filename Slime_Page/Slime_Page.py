@@ -10,27 +10,24 @@ def index() -> rx.Component:
     return rx.box(
         navbar(),
         rx.center(
-            rx.box(
-                header()
-            )
-        ),
-        rx.center(
             rx.vstack(
-                rx.flex(
-                    rx.stack(
-                        rx.box(
-                            links()
+                header(),
+                rx.vstack(
+                    rx.flex(
+                        rx.stack(
+                            rx.box(
+                                links()
+                            )
                         )
-                    )
+                    ),
+                    flex_direction = styles.FLEX_DIRECTION,
+                    max_width = styles.MAX_WIDTH,
+                    margin_y= styles.Size.DEFAULT.value
                 ),
-                flex_direction = styles.FLEX_DIRECTION,
-                max_width = styles.MAX_WIDTH,
-                margin_y= styles.Size.DEFAULT.value
-            )
+            ),
         ),
         footer()
     )
-
 app = rx.App(
     style = styles.BASE_STYLE
 )
