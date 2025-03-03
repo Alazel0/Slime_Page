@@ -10,6 +10,6 @@ def header() -> rx.Component:
                 rx.text("@slime_links", color_scheme="gray"),
             )
         ),
-        rx.text("aqui podria ir un texto de ser necesario ya verre si lo quito o lo cambio"),
+        rx.text("aqui podria ir un texto de ser necesario ya vere si lo quito o lo cambio"),
         padding_top= Size.DEFAULT.value
     )
