@@ -5,6 +5,10 @@ from Slime_Page.views.header import header
 from Slime_Page.views.links import links
 import Slime_Page.styles.styles as styles
 
+@rx.page(
+        
+)
+
 def index() -> rx.Component:
     return rx.box(
         navbar(),
