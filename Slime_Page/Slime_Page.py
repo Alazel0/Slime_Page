@@ -1,34 +1,11 @@
 import reflex as rx
-from Slime_Page.components.navbar import navbar
-from Slime_Page.components.footer import footer
-from Slime_Page.views.header import header
-from Slime_Page.views.links import links
 import Slime_Page.styles.styles as styles
+from Slime_Page.pages.index import index
 
-@rx.page(route="/", title="Slime page")
-def index() -> rx.Component:
-    return rx.box(
-        navbar(),
-        rx.center(
-            rx.vstack(
-                header(),
-                rx.vstack(
-                    rx.flex(
-                        rx.stack(
-                            rx.box(
-                                links()
-                            )
-                        )
-                    ),
-                    flex_direction = styles.FLEX_DIRECTION,
-                    max_width = styles.MAX_WIDTH,
-                    margin_y= styles.Size.DEFAULT.value
-                ),
-            ),
-        ),
-        footer()
-    )
+#@rx.page(route="/", title="Slime page")
+
 app = rx.App(
-    style = styles.BASE_STYLE
+    style = styles.BASE_STYLE,
+    theme = rx.theme(accent_color = styles.Color.BACKGRAUND.value)
 )
 app.add_page(index)
