@@ -5,7 +5,7 @@ def link_button(text: str, url: str) -> rx.Component:
         rx.button(
             rx.hstack(
                 rx.icon(
-                    tag= "album"
+                    tag= "arrow_forward"
                 ),
                 rx.text(text)
             )
