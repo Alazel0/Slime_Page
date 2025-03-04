@@ -7,7 +7,9 @@ def link_button(text: str, url: str) -> rx.Component:
                 rx.icon(
                     tag= "arrow_forward"
                 ),
-                rx.text(text)
+                rx.vstack(
+                    rx.text(text)
+                )
             )
         ),
         href= url,
