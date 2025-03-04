@@ -17,13 +17,14 @@ class Size(Enum):
 
 # Style
 BASE_STYLE = {
-    "backgraund_color": Color.BACKGRAUND.value,
+    "background_color": Color.BACKGROUND.value,
     rx.button: {
         "width": "100%",
         "height": "100%",
         "padding": Size.SMALL.value,
         "color": TextColor.HEADER,
-        "border_radius": Size.DEFAULT.value
+        "border_radius": Size.DEFAULT.value,
+        "background_color": Color.CONTENT.value
     }
 }
 

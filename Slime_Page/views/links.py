@@ -4,7 +4,6 @@ from Slime_Page.components.title import title
 
 def links() -> rx.Component:
     return rx.vstack(
-        title("Enlazar Redes"),
         rx.hstack(
             link_button("Twitter", "http:/www.ggg.com"),
             rx.spacer(),

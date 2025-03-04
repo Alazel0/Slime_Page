@@ -2,13 +2,13 @@ import reflex as rx
 
 #comun
 
-def lang() -> rx.Component:
-    return rx.Script("document.documentElement.lang='es'")
-preview = "poner una imagen aqui"
+# def lang() -> rx.Component:
+#     return rx.Script("document.documentElement.lang='es'")
+# preview = "poner una imagen aqui"
 
 _meta = [
     {"name": "og:type", "content": "website"},
-    {"name": "og:image", "content": preview},
+    # {"name": "og:image", "content": preview},
     {"name": "twitter:card", "content": "summary_large_image"},
     {"name": "twitter:site", "content": "@SlimeGamer44"},
 ]

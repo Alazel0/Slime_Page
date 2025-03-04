@@ -3,7 +3,7 @@ from enum import Enum
 class Color(Enum):
     PRIMARY = "#1cf726"
     SECONDARY = "#087ec4"
-    BACKGRAUND = "#9933ff"
+    BACKGROUND = "#9933ff"
     CONTENT = "#171F26"
 
 class TextColor(Enum):

@@ -11,13 +11,13 @@ import Slime_Page.styles.styles as styles
     route= Route.INDEX.value,
     title= utils.index_title,
     description= utils.index_description,
-    image= utils.preview,
+    # image= utils.preview,
     meta= utils.index_meta
 )
 
 def index() -> rx.Component:
     return rx.box(
-        utils.lang(),
+        # utils.lang(),
         navbar(),
         rx.center(
             rx.vstack(
