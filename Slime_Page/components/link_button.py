@@ -1,4 +1,5 @@
 import reflex as rx
+from Slime_Page.styles.styles import Size
 
 def link_button(text: str, url: str) -> rx.Component:
     return rx.link(
@@ -8,7 +9,8 @@ def link_button(text: str, url: str) -> rx.Component:
                     tag= "album"
                 ),
                 rx.vstack(
-                    rx.text(text)
+                    rx.text(text),
+                    margin = Size.ZERO.value
                 )
             )
         ),
