@@ -33,6 +33,5 @@ BASE_STYLE = {
 
 title_style = dict(
     width = "100%",
-    padding_top = Size.DEFAULT.value,
-    font_family = Font.TITLE.value
+    padding_top = Size.DEFAULT.value
 )
