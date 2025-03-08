@@ -7,6 +7,9 @@ from Slime_Page.views.header import header
 from Slime_Page.views.links import links
 import Slime_Page.styles.styles as styles
 
+class State(rx.State):
+    """definir un estado"""
+
 @rx.page(
     route= Route.INDEX.value,
     title= utils.index_title,
