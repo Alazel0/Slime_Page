@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'Alazel0/Slime_page'
+    if: github.repository == 'Alazel0/Slime_Page'
     runs-on: ubuntu-latest
 
     permissions:
