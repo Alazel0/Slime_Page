@@ -55,4 +55,3 @@ async def auth_twitter_callback(request: Request):
     token = await twitter.authorize_access_token(request)
     user = await twitter.parse_id_token(request, token)
     return {"user": user}
-
