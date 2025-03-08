@@ -23,7 +23,7 @@ jobs:
           python-version: '3.13.1'
 
       - name: Run build script
-        run: python ./Slime_Page/remote_build.sh
+        run: ./Slime_Page/remote_build.sh
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
